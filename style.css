@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
 }
 .nav-bar {
   display: flex;
@@ -65,15 +69,15 @@
   display: flex;
   padding: 3rem 2rem 2rem 2rem;
   margin-top: 3rem;
-  margin-left: 5rem;
+  margin-left: 4rem;
 }
 .grid-text {
   background-color: #f2f0f2;
   border-radius: 0rem 2.5rem 2.5rem 0rem;
-  padding: 6rem 3rem 1rem 4rem;
+  padding: 6rem 1rem 1rem 2rem;
 }
 .grid-text h1 {
-  padding-bottom: 0.9rem;
+  padding-bottom: 0.6rem;
   font-family: "lato";
 }
 .grid-text p {
@@ -236,11 +240,13 @@
   .list-nav{
     display: none;
   }
+  
   .mobile-view{
     display: flex;
-    justify-content: space-evenly;
-    gap: 18rem;
-    padding: 2px;
+    justify-content: space-between;
+    gap: 15rem;
+    padding: 1px;
+    
     
   }
   .logo img{
@@ -249,6 +255,7 @@
   .hero-image {
     background-image: url("./images/First\ screen.png");
     height: 800px;
+    background-size: cover;
     
   }
   .hero-text {
@@ -272,7 +279,7 @@
     
   }
   .grid-images img{
-    width:12rem;
+    width:100%;
   }
   .grid-images .img2{
     border-radius: 0rem 2rem 0rem 0rem;
@@ -294,7 +301,7 @@
   }
   .grid-section {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     margin: auto;
   }
   .grid-boxes img {
@@ -317,14 +324,14 @@
   }
   .location-images {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: 1fr;
     padding: 2rem;
     margin: 1rem;
     gap: 1rem;
   }
   .location-images img{
-width: 23rem;
-height: 15rem;
+width: 100%;
+height: auto;
   }
   .bespoke-section{
     display: none;
